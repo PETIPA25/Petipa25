@@ -41,21 +41,13 @@ padding:40px;
 }
 
 .card{
-
-width:100%;
-
-max-width:950px;
-
-background:white;
-
+width:min(92%,900px);
+background:#fff;
 border-radius:25px;
-
-padding:60px;
-
+padding:clamp(25px,5vw,60px);
 box-shadow:0 20px 50px rgba(0,0,0,.12);
-
 text-align:center;
-
+margin:auto;
 }
 
 h2{
@@ -105,13 +97,11 @@ margin:30px auto;
 }
 
 p{
-
-font-size:18px;
-
+font-size:clamp(18px,2vw,22px);
 line-height:1.8;
-
-margin-bottom:40px;
-
+max-width:650px;
+margin:0 auto 40px;
+text-align:center;
 }
 
 .btn{
@@ -199,3 +189,23 @@ Arte • Disciplina • Pasión
 </body>
 
 </html>
+@media (max-width:600px){
+
+h1{
+font-size:58px;
+}
+
+h2{
+font-size:42px;
+}
+
+.sub{
+font-size:18px;
+}
+
+.btn{
+width:100%;
+max-width:320px;
+}
+
+}

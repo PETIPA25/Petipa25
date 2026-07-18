@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,248 +12,245 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-
-background:linear-gradient(135deg,#fbf7ef,#f4eee5);
-
-font-family:Montserrat,sans-serif;
-
-color:#49395b;
-
+    background:linear-gradient(135deg,#fbf7ef,#f4eee5);
+    font-family:Montserrat,sans-serif;
+    color:#49395b;
 }
 
 .hero{
-
-min-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-padding:40px 20px;
-
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
 }
 
 .card{
+    position:relative;
+    width:min(95%,900px);
+    background:white;
+    border-radius:30px;
+    padding:55px 45px;
+    text-align:center;
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+    overflow:hidden;
+}
 
-position:relative;
+/* Marco dorado */
 
-width:min(95%,900px);
+.card::after{
 
-background:white;
+    content:"";
 
-border-radius:28px;
+    position:absolute;
 
-padding:50px;
+    inset:15px;
 
-box-shadow:0 20px 60px rgba(0,0,0,.12);
+    border:1px solid rgba(200,167,96,.45);
 
-overflow:hidden;
+    border-radius:20px;
 
-text-align:center;
+    pointer-events:none;
 
 }
 
-/* LOGO PRINCIPAL */
+/* Logo principal */
 
-.logo petipa{
+.logo-petipa{
 
-width:min(430px,90%);
+    width:min(420px,90%);
 
-margin:auto;
+    display:block;
 
-display:block;
+    margin:0 auto 30px;
 
-margin-bottom:35px;
-
-}
-
-/* MENSAJE */
-
-.message{
-
-position:relative;
-
-max-width:650px;
-
-margin:auto;
-
-padding:25px;
-
-margin-bottom:45px;
+    filter:drop-shadow(0 8px 15px rgba(0,0,0,.12));
 
 }
 
-/* MARCA DE AGUA */
-
-.message::before{
-
-content:"";
-
-position:absolute;
-
-left:50%;
-
-top:50%;
-
-transform:translate(-50%,-50%);
-
-width:290px;
-
-height:290px;
-
-background:url("LOGO 25.jpeg") center center no-repeat;
-
-background-size:contain;
-
-opacity:.08;
-
-pointer-events:none;
-
-}
-
-.message p{
-
-position:relative;
-
-z-index:2;
-
-font-size:20px;
-
-line-height:1.9;
-
-}
-
-/* LÍNEA DECORATIVA */
+/* Línea */
 
 .line{
 
-width:120px;
+    width:120px;
 
-height:2px;
+    height:2px;
 
-background:#c8a760;
+    background:#c8a760;
 
-margin:30px auto 40px;
+    margin:0 auto 40px;
 
 }
 
-/* BOTÓN */
+/* Mensaje */
+
+.message{
+
+    position:relative;
+
+    max-width:650px;
+
+    margin:0 auto 45px;
+
+    padding:35px 20px;
+
+}
+
+/* Marca de agua */
+
+.message::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:300px;
+
+    height:300px;
+
+    background:url("LOGO 25.png") center center no-repeat;
+
+    background-size:contain;
+
+    opacity:.07;
+
+    pointer-events:none;
+
+}
+
+/* Texto */
+
+.message p{
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#4d4361;
+
+}
+
+/* Botón */
 
 .btn{
 
-display:inline-flex;
+    display:inline-flex;
 
-align-items:center;
+    align-items:center;
 
-justify-content:center;
+    justify-content:center;
 
-gap:12px;
+    gap:10px;
 
-padding:18px 42px;
+    padding:18px 42px;
 
-border-radius:50px;
+    text-decoration:none;
 
-text-decoration:none;
+    color:white;
 
-font-weight:600;
+    font-size:18px;
 
-font-size:18px;
+    font-weight:600;
 
-color:white;
+    border-radius:60px;
 
-background:linear-gradient(135deg,#552d73,#7d4da6);
+    background:linear-gradient(135deg,#5d2f84,#7d4fa6);
 
-border:2px solid #d8b44d;
+    border:2px solid #d4af37;
 
-box-shadow:0 15px 35px rgba(84,44,115,.25);
+    box-shadow:0 12px 30px rgba(93,47,132,.30);
 
-transition:.35s;
+    transition:.35s;
 
 }
 
 .btn:hover{
 
-transform:translateY(-4px);
+    transform:translateY(-4px);
 
-box-shadow:0 22px 45px rgba(84,44,115,.35);
+    background:linear-gradient(135deg,#73459f,#9066bb);
 
-background:linear-gradient(135deg,#6b3f93,#9165b8);
+    box-shadow:0 18px 40px rgba(93,47,132,.40);
 
 }
 
-/* FOOTER */
+/* Pie */
 
 footer{
 
-margin-top:55px;
+    margin-top:55px;
 
-font-size:14px;
+    color:#8a8a8a;
 
-letter-spacing:3px;
+    font-size:14px;
 
-color:#7d7d7d;
+    letter-spacing:3px;
 
 }
 
-/* RESPONSIVE */
+/* Celulares */
 
 @media(max-width:700px){
 
 .card{
 
-padding:30px 20px;
+    padding:35px 22px;
 
 }
 
 .logo-petipa{
 
-width:95%;
+    width:95%;
 
 }
 
 .message{
 
-padding:10px;
+    padding:15px 5px;
 
 }
 
 .message::before{
 
-width:180px;
+    width:180px;
 
-height:180px;
+    height:180px;
 
 }
 
 .message p{
 
-font-size:18px;
+    font-size:18px;
 
 }
 
 .btn{
 
-width:100%;
+    width:100%;
 
-max-width:330px;
-
-font-size:17px;
+    max-width:330px;
 
 }
 
 footer{
 
-font-size:12px;
-
-letter-spacing:2px;
+    font-size:12px;
 
 }
 
@@ -270,7 +266,7 @@ letter-spacing:2px;
 
 <div class="card">
 
-<img src="LOGO PETIPA.jpeg" class="logo-petipa" alt="Petipa">
+<img src="LOGO PETIPA.png" class="logo-petipa" alt="Petipa">
 
 <div class="line"></div>
 
@@ -289,9 +285,7 @@ Te invitamos a consultar el programa digital de nuestra función.
 </div>
 
 <a class="btn"
-
 href="https://drive.google.com/file/d/1YX41FhdYJAjLWqD6ETa4Of-bwSC1tQB2/view?usp=sharing"
-
 target="_blank">
 
 📖 Consultar programa

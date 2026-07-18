@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,28 +18,34 @@
 }
 
 body{
+
     background:linear-gradient(135deg,#fbf7ef,#f4eee5);
     font-family:Montserrat,sans-serif;
     color:#49395b;
+
 }
 
 .hero{
+
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:40px 20px;
+    padding:30px 20px;
+
 }
 
 .card{
+
     position:relative;
     width:min(95%,900px);
     background:white;
     border-radius:30px;
     padding:55px 45px;
     text-align:center;
-    box-shadow:0 25px 60px rgba(0,0,0,.12);
     overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
 }
 
 /* Marco dorado */
@@ -47,29 +53,21 @@ body{
 .card::after{
 
     content:"";
-
     position:absolute;
-
     inset:15px;
-
     border:1px solid rgba(200,167,96,.45);
-
     border-radius:20px;
-
     pointer-events:none;
 
 }
 
-/* Logo principal */
+/* Logo */
 
 .logo-petipa{
 
     width:min(420px,90%);
-
     display:block;
-
-    margin:0 auto 30px;
-
+    margin:0 auto 35px;
     filter:drop-shadow(0 8px 15px rgba(0,0,0,.12));
 
 }
@@ -79,11 +77,8 @@ body{
 .line{
 
     width:120px;
-
     height:2px;
-
     background:#c8a760;
-
     margin:0 auto 40px;
 
 }
@@ -93,12 +88,10 @@ body{
 .message{
 
     position:relative;
-
     max-width:650px;
-
-    margin:0 auto 45px;
-
-    padding:35px 20px;
+    margin:auto;
+    padding:30px 20px;
+    margin-bottom:45px;
 
 }
 
@@ -107,41 +100,25 @@ body{
 .message::before{
 
     content:"";
-
     position:absolute;
-
     top:50%;
-
     left:50%;
-
     transform:translate(-50%,-50%);
-
-    width:300px;
-
-    height:300px;
-
-    background:url("LOGO 25.png") center center no-repeat;
-
+    width:280px;
+    height:280px;
+    background:url("logo25.png") center center no-repeat;
     background-size:contain;
-
-    opacity:.07;
-
+    opacity:.08;
     pointer-events:none;
 
 }
 
-/* Texto */
-
 .message p{
 
     position:relative;
-
     z-index:2;
-
     font-size:20px;
-
     line-height:1.9;
-
     color:#4d4361;
 
 }
@@ -151,14 +128,12 @@ body{
 .btn{
 
     display:inline-flex;
-
     align-items:center;
-
     justify-content:center;
 
-    gap:10px;
-
     padding:18px 42px;
+
+    border-radius:50px;
 
     text-decoration:none;
 
@@ -168,13 +143,11 @@ body{
 
     font-weight:600;
 
-    border-radius:60px;
-
-    background:linear-gradient(135deg,#5d2f84,#7d4fa6);
+    background:linear-gradient(135deg,#5c2f82,#7e52a8);
 
     border:2px solid #d4af37;
 
-    box-shadow:0 12px 30px rgba(93,47,132,.30);
+    box-shadow:0 12px 30px rgba(92,47,130,.28);
 
     transition:.35s;
 
@@ -184,19 +157,19 @@ body{
 
     transform:translateY(-4px);
 
-    background:linear-gradient(135deg,#73459f,#9066bb);
+    background:linear-gradient(135deg,#7348a0,#946bc0);
 
-    box-shadow:0 18px 40px rgba(93,47,132,.40);
+    box-shadow:0 20px 40px rgba(92,47,130,.35);
 
 }
 
-/* Pie */
+/* Footer */
 
 footer{
 
     margin-top:55px;
 
-    color:#8a8a8a;
+    color:#8b8b8b;
 
     font-size:14px;
 
@@ -204,13 +177,13 @@ footer{
 
 }
 
-/* Celulares */
+/* Celular */
 
 @media(max-width:700px){
 
 .card{
 
-    padding:35px 22px;
+    padding:35px 20px;
 
 }
 
@@ -222,14 +195,13 @@ footer{
 
 .message{
 
-    padding:15px 5px;
+    padding:10px;
 
 }
 
 .message::before{
 
     width:180px;
-
     height:180px;
 
 }
@@ -243,7 +215,6 @@ footer{
 .btn{
 
     width:100%;
-
     max-width:330px;
 
 }
@@ -251,6 +222,7 @@ footer{
 footer{
 
     font-size:12px;
+    letter-spacing:2px;
 
 }
 
@@ -266,7 +238,7 @@ footer{
 
 <div class="card">
 
-<img src="LOGO PETIPA.png" class="logo-petipa" alt="Petipa">
+<img src="logo-petipa.png" class="logo-petipa" alt="Petipa">
 
 <div class="line"></div>
 
